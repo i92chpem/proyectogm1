@@ -1,5 +1,5 @@
 #ifndef VISITANTE_H
-#define  VISITANTE_H
+#define VISITANTE_H
 
 #include <iostream>
 #include <string>
