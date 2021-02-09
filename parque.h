@@ -11,14 +11,14 @@ using namespace std;
 class Parque
 {
   private:
-    string ubicacion, localidad, provincia, fecha, reconocimientos, nombre;
-    int superficie;
-    list<Sendero> senderos;
+    string ubicacion_, localidad_, provincia_, fecha_, reconocimientos_, nombre_;
+    int superficie_;
+    list<Sendero> senderos_;
     
   public:
-    void setInfo(string u, string l, string p, string f, string r, string n, int s);
+    void setInfo(string ubicacion, string localidad, string provincia, string fecha, string reconocimientos, string nombre, int superficie);
     void printInfo();
-    inline list <Sendero> getSenderos() {return senderos;}
+    inline list <Sendero> getSenderos() {return senderos_;}
 };
 
 #endif
