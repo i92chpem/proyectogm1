@@ -14,3 +14,13 @@ void Persona::setInfo(string n, string a, string D, strind f, unsigned int t, st
   email = e;
   direccion = d;
  }
+
+ string Persona::getDNI()
+ {
+   return dni;
+ }
+
+ void Persona::imprimeContacto()
+ {
+   cout <<"\nTelefono: " << telefono << \nEmail: " << email << "\n";
+ }
