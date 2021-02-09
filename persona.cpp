@@ -19,23 +19,18 @@ void Persona::setInfo(string n, string a, string D, strind f, unsigned int t, st
  {
   char letras[]={'T' , 'R' , 'W' , 'A' , 'G' , 'M' , 'Y' , 'F' , 'P' , 'D' , 'X' , 'B' ,'N' , 'J' , 'Z' , 'S' , 'Q' , 'V' , 'H' , 'L', 'C' , 'K' , 'E'};
   string numero = dni[0] + dni[1] + dni[2] + dni[3] + dni[4] + dni[5] + dni[6] + dni[7];
-  atoi(numero);
+  if(strlen(dni)!=9)
+  {return false;}
+  else
+  {atoi(numero);}
   char letra = dni[8];
   if(letra==letras[numero%23])
-  {
-    return true;
-  }
+  {return true;}
   else
-  {
-    return false;
-  }
+  {return false;}
  }                                 
  string Persona::getDNI()
- {
-   return dni;
- }
+ {return dni;}
 
  void Persona::imprimeContacto()
- {
-   cout <<"\nTelefono: " << telefono << \nEmail: " << email << "\n";
- }
+ {cout <<"\nTelefono: " << telefono << \nEmail: " << email << "\n";}
