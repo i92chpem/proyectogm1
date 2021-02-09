@@ -15,6 +15,21 @@ void Persona::setInfo(string n, string a, string D, strind f, unsigned int t, st
   direccion = d;
  }
 
+ bool Persona::esDni(dni)
+ {
+  char letras[]={'T' , 'R' , 'W' , 'A' , 'G' , 'M' , 'Y' , 'F' , 'P' , 'D' , 'X' , 'B' ,'N' , 'J' , 'Z' , 'S' , 'Q' , 'V' , 'H' , 'L', 'C' , 'K' , 'E'};
+  string numero = dni[0] + dni[1] + dni[2] + dni[3] + dni[4] + dni[5] + dni[6] + dni[7];
+  atoi(numero);
+  char letra = dni[8];
+  if(letra==letras[numero%23])
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
+ }                                 
  string Persona::getDNI()
  {
    return dni;
