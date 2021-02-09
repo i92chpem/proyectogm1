@@ -23,8 +23,13 @@ class Sendero
       id_=0;
       bici_=false;
     }
-    
-    string getNombre()
-    {
-      return nombre_;
-  
+    inline string getNombre(){return nombre_;}
+    inline float getLongitud() {return longitud_;}
+    inline string getEstado() {return estado_;}
+    inline bool getBici() {return bici_;}
+    inline int getID() {return id_;}
+    inline void setEstado (string estado) {estado_=estado;}
+    inline setDificultad (int dificultad) {dificultad_=dificultad;}
+};
+
+#endif
