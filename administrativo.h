@@ -6,6 +6,6 @@
 
 using namespace std;
 
-
+class Administrativo:public Persona{};
 
 #endif
