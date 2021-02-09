@@ -6,7 +6,7 @@
 
 using namespace std;
 
-void Parque::setInfo(string u, string l, string p, string f, string r, string n, int s
+void Parque::setInfo(string u, string l, string p, string f, string r, string n, int s)
 {
   ubicacion = u;
   localidad = l;
