@@ -1,2 +1,2 @@
 # proyectogm1
-Carpeta que recojo los prototipos de los funciones y algunas funciones inline
+Carpeta que recoje los prototipos de los funciones y algunas funciones inline
