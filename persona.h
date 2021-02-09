@@ -9,8 +9,8 @@ using namespace std;
 class Persona
 {
   private:
-    string nombre_, apellidos_, dni_, fecha_, email_, direccion_;
-    unsigned int telefono_;
+    string nombre, apellidos, dni, fecha, email, direccion;
+    unsigned int telefono;
   public:
     Persona();
     void setInfo(string n, string a, string D, string f, unsigned int t, string e, string d;
