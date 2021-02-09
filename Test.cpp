@@ -3,6 +3,23 @@
 #include "xml_listener.h"
 #include "cute_runner.h"
 
+void testEsDni()
+{
+	string dni = 26829434A;
+	Persona p = Persona();
+	bool resultado = p.esDni(dni);
+	ASSERT(resultado == true);
+}
+
+void testNoEsDni()
+{
+	string dni 26935365Y;
+	Persona p = Persona();
+	bool resultado = p.esDni(dni);
+	ASSERT(resultado == false);
+}
+
+
 void thisIsATest() {
 	ASSERTM("start writing tests", false);	
 }
