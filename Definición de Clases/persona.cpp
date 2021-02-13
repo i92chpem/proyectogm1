@@ -18,7 +18,11 @@ void Persona::setInfo(string n, string a, string D, strind f, unsigned int t, st
  bool Persona::esDni(dni)
  {
   char letras[]={'T' , 'R' , 'W' , 'A' , 'G' , 'M' , 'Y' , 'F' , 'P' , 'D' , 'X' , 'B' ,'N' , 'J' , 'Z' , 'S' , 'Q' , 'V' , 'H' , 'L', 'C' , 'K' , 'E'};
-  string numero = dni[0] + dni[1] + dni[2] + dni[3] + dni[4] + dni[5] + dni[6] + dni[7];
+  string numero;
+  for(int i=0;i<8;i++)
+  {
+   numero = dni[i]; 
+  }
   if(strlen(dni)!=9)
   {return false;}
   else
