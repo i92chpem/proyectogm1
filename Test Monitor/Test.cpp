@@ -19,7 +19,6 @@ void testNoEsDni()
 	ASSERT(resultado == false);
 }
 
-
 void thisIsATest() {
 	ASSERTM("start writing tests", false);	
 }
